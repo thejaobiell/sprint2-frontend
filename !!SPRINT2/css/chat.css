@@ -45,7 +45,7 @@ body {
     position: absolute;
 }
 
-.div2 .chat {
+.chat {
     left: 331px;
     top: 211px;
     position: absolute;
@@ -85,7 +85,7 @@ body {
     word-wrap: break-word;
 }
 
-.div3 {
+.menu {
     width: 864px;
     height: 383px;
     left: 0px;
@@ -93,7 +93,7 @@ body {
     position: absolute;
 }
 
-.div3 .image {
+.menu .image {
     width: 767px;
     height: 186px;
     left: 0px;
@@ -102,7 +102,7 @@ body {
     background: #D9D9D9;
 }
 
-.div3 img {
+.menu img {
     width: 144px;
     height: 184px;
     left: 25px;
@@ -110,7 +110,7 @@ body {
     position: absolute;
 }
 
-.div3 .diagnos {
+.menu .diagnos {
     width: 767px;
     height: 321px;
     left: 97px;
@@ -119,17 +119,17 @@ body {
     text-align: center;
 }
 
-.div3 .diagnos span {
+.menu .diagnos span {
     font-size: 55px;
     font-family: Krona One;
     font-weight: 400;
     word-wrap: break-word;
 }
 
-.div3 .diagnos .blue {
+.menu .diagnos .blue {
     color: #009FE3;
 }
 
-.div3 .diagnos .black {
+.menu .diagnos .black {
     color: black;
 }
