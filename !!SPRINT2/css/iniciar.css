@@ -6,19 +6,27 @@ body {
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 767px;
+    min-height: 100vh;
     background: white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .header {
-    width: 767px;
-    height: 383px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    max-width: 767px;
     background: rgb(146, 146, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -29,52 +37,65 @@ body {
 
 .logo img {
     width: 144px;
-    height: 184px;
+    height: auto;
     margin-right: 20px;
 }
 
 .logo h1 {
-    font-size: 55px;
+    font-size: 1.5rem;
     color: #009FE3;
 }
 
-.background-image {
-    width: 767px;
-    height: 1180px;
-    position: absolute;
-    top: 184px;
-    left: 0;
-}
-
-.start-button {
-    width: 572px;
-    height: 132px;
-    position: absolute;
-    top: 917px;
-    left: 97px;
-    background: #009FE3;
-    border-radius: 60px;
-    border: 5px #B6B6B6 solid;
-}
-
-.button {
-    width: 526px;
-    height: 103px;
-    position: absolute;
-    top: 931px;
-    left: 120px;
+.content {
+    width: 100%;
+    max-width: 767px;
+    position: relative;
     text-align: center;
-    color: white;
-    font-size: 45px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .description {
-    width: 758px;
-    height: 709px;
     position: absolute;
-    top: 545px;
-    left: 9px;
+    top: 20%;
+    width: 100%;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 37px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.start-button {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 80%;
+    max-width: 400px;
+    height: 60px;
+    background: #009FE3;
+    border-radius: 30px;
+    border: 2px solid #B6B6B6;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px; /* Vertically center text */
+    padding: 0;
 }
