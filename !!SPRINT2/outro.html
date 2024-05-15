@@ -15,28 +15,36 @@
     <section class="form-section">
         <label>Nome Completo: <br> 
             <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome"> 
-        </label> <br>
+        </label>
     
         <label>Data de nascimento: <br> 
-            <input type="date" name="txtDataNascimento" class="txtInput"> 
-        </label> <br>
+            <input type="date" name="txtDataNascimento" id="txtNASCIMENTO" min="1900-01-01" max="2024-05-15"> 
+        </label>
         
+        <label>Sexo:</label>
+        <label><input type="radio" name="rdoSEXO" id="rdoSEXOM" value="M"> Masculino</label>
+        <label><input type="radio" name="rdoSEXO" id="rdoSEXOF" value="F"> Feminino</label>
+        <label><input type="radio" name="rdoSEXO" id="rdoSEXO0" value="O"> Outros</label>
+
+
         <label for="txtEmail">E-Mail: <br>
-            <input type="email" name="txtEmail" id="txtEmail" placeholder="Digite seu e-mail">
-        </label><br>
+            <input type="email" name="txtEmail" id="txtEMAIL" placeholder="Digite seu e-mail">
+        </label>
         
         <label for="txtcpf">Cpf: <br> 
-            <input type="text" id="txtcpf" name="txtcpf" placeholder="Digite o CPF" maxlength="14">
-        </label><br>
+            <input type="text" id="txtCPF" name="txtcpf" placeholder="Digite o CPF" maxlength="11">
+        </label>
+
+        <label for="txtcnh">Cnh: <br> 
+            <input type="text" id="txtCNH" name="txtcnh" placeholder="Digite o Cnh" maxlength="11">
+        </label>
     
         <label for="txtcelular">Telefone:<br> 
-            <input type="text" id="txtcel" name="txtcel" placeholder="Digite o número de telefone" maxlength="15"> 
-        </label><br>
+            <input type="text" id="txtTEL" name="txtcel" placeholder="Digite o número de telefone" maxlength="15"> 
+        </label>
     </section>    
 
         <input type="button" value="Cadastrar" id="botao">
-
-
     <footer>
         <p>Todos os direito reservados © Diagnoscar 2024</p>
     </footer>
