@@ -1,10 +1,75 @@
+*{
+    margin: 0;
+}
+
 header {
     width: 767px;
     height: 186px;
     background-color: #D9D9D9;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
 }
-
 #logo {
     width: 144px;
     height: 184px;
+    float: left;
+}
+#Diganoscar {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    margin-top: -50px; 
+    margin-left: -72px; 
+    padding: 10px;
+}
+.black {
+    color: black;
+}
+.blue {
+    color: #009FE3; 
+}
+
+section input[type="text"],
+section input[type="date"],
+section input[type="email"] {
+    width: 742px; /* Define a largura do input como 100% para ocupar todo o espaço disponível na seção */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px entre os inputs */
+    border: 2px solid #CCCCCC; /* Adiciona uma borda de 2px sólida com cor cinza */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    background-color: #F0F0F0; /* Altera a cor de fundo do input para cinza claro */
+}
+
+
+
+/* Estilos para o botão */
+#botao {
+    width: 449px;
+    height: 132px;
+    border-radius: 60px;
+    border: 5px solid #B6B6B6;
+    background: #009FE3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px auto 10px; 
+    display: block;
+}
+
+
+
+#botao:hover {
+    background: #0077B6;
+}
+
+
+footer{
+    width: 768px;
+    height: 80px;
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+    text-align: center;
+    font-size: large;
 }
