@@ -1,101 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    padding: 0;
-    background: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        height: 135px;
+        background-color: #D9D9D9;
+        text-align: center;
+        font-size: 20px;
+        padding: 12px 0;
+        position: relative;
+    }
+    #logo {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        margin-top: -50px;
+    }
+    #Diganoscar {
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 150px;
+        margin-top: -0.5em;
+    }
+    .black {
+        color: black;
+    }
+    .blue {
+        color: #009FE3;
+    }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 767px;
-    min-height: 100vh;
-    background: white;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
-}
+    #fundao {
+        position: relative;
+    }
 
-.header {
-    width: 100%;
-    max-width: 767px;
-    background: rgb(146, 146, 146);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
+    #fundo {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    #botaoEtexto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        color: white;
+        margin-top: 30px; 
+        margin-left: -200px;
+    }
+    #botaoEtexto h1 {
+        font-size: 24px;
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.logo img {
-    width: 144px;
-    height: auto;
-    margin-right: 20px;
-}
+    #botaoEtexto input[type="button"] {
+        height: 60px;
+        border-radius: 25px;
+        border: 3px solid #B6B6B6;
+        background: #009FE3;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 
-.logo h1 {
-    font-size: 1.5rem;
-    color: #009FE3;
-}
+    #botao:hover {
+        background: #0077B6;
+    }
 
-.content {
-    width: 100%;
-    max-width: 767px;
-    position: relative;
-    text-align: center;
-}
-
-.image-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.background-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.description {
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.start-button {
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button {
-    width: 80%;
-    max-width: 400px;
-    height: 60px;
-    background: #009FE3;
-    border-radius: 30px;
-    border: 2px solid #B6B6B6;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-align: center;
-    line-height: 60px; /* Vertically center text */
-    padding: 0;
+    footer {
+        width: 100%;
+        height: 40px;
+        background-color: #D9D9D9;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        padding: 10px 0;
+        
+    }
 }
