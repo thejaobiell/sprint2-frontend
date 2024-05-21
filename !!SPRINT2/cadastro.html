@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAGNOSCAR</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/portoLogo/Porto Seguro1.png" alt="Logo porto">
+        <h1 id="Diagnoscar"><span class="black">Diagnos</span><span class="blue">car</span></h1>
+    </header>
+
+    <section class="form-section">
+        <form id="registrationForm">
+            <label for="txtNome">Nome Completo: <br>
+                <input type="text" name="txtNome" id="txtNome" placeholder="Digite seu nome">
+                <span class="erro" id="erroNOME"></span>
+            </label>
+
+            <label for="txtDataNascimento">Data de nascimento: <br>
+                <input type="date" name="txtDataNascimento" id="txtNASCIMENTO" min="1900-01-01" max="2006-12-31">
+            </label>
+
+            <label>Sexo:</label>
+            <label><input type="radio" name="rdoSEXO" id="rdoSEXOM" value="M"> Masculino</label>
+            <label><input type="radio" name="rdoSEXO" id="rdoSEXOF" value="F"> Feminino</label>
+            <label><input type="radio" name="rdoSEXO" id="rdoSEXO0" value="O"> Outros</label>
+            <br>
+
+            <label for="txtEMAIL">E-Mail: <br>
+                <input type="email" name="txtEmail" id="txtEMAIL" placeholder="Digite seu e-mail">
+                <span class="erro" id="erroEMAIL"></span>
+            </label>
+
+            <label for="txtCPF">Cpf: <br>
+                <input type="text" id="txtCPF" name="txtcpf" placeholder="Digite o CPF" onkeydown="aplicarMascara(this, 'cpf')" maxlength="14">
+                <span class="erro" id="erroCPF"></span>
+            </label>
+
+            <label for="txtRG">RG: <br>
+                <input type="text" id="txtRG" name="txtrg" placeholder="Digite o RG" onkeydown="aplicarMascara(this, 'rg')" maxlength="12">
+                <span class="erro" id="erroRG"></span>
+            </label>
+
+            <label for="txtCNH">Cnh: <br>
+                <input type="text" id="txtCNH" name="txtcnh" placeholder="Digite o Cnh" maxlength="11">
+                <span class="erro" id="erroCNH"></span>
+            </label>
+
+            <label for="txtCEL">Celular:<br>
+                <input type="text" id="txtCEL" name="txtCEL" placeholder="Digite o número de Celular" onkeydown="aplicarMascara(this, 'cel')" maxlength="15">
+                <span class="erro" id="erroCEL"></span>
+            </label>
+
+            <label>Endereço:
+                <textarea name="comentarios" cols="50" rows="10" maxlength="2000" placeholder="Digite o Rua, Número, Bairro, Cidade e Estado. (Nesta Ordem)"></textarea>
+                <span class="erro" id="erroENDERECO"></span>
+            </label>
+            <br>
+            <input type="button" value="Cadastrar" id="botao" onclick="validarFormulario()">
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos os direitos ainda não reservados © Diagnoscar 2024</p>
+    </footer>
+
+    <script>
+        function validarFormulario() {
+            const nome = document.getElementById("txtNome");
+            const erroNOME = document.getElementById("erroNOME");
+            const cpf = document.getElementById("txtCPF");
+            const erroCPF = document.getElementById("erroCPF");
+            const rg = document.getElementById("txtRG");
+            const erroRG = document.getElementById("erroRG");
+
+            let formValid = true;
+
+            if (nome.value.trim() === '') {
+                erroNOME.innerText = "Campo Obrigatório";
+                formValid = false;
+            } else {
+                erroNOME.innerText = "";
+            }
+
+            if (cpf.value.trim() === '') {
+                erroCPF.innerText = "Campo Obrigatório";
+                formValid = false;
+            } else {
+                erroCPF.innerText = "";
+            }
+
+            if (formValid) {
+                window.location.href = 'iniciar.html';
+            } else {
+                alert("Por favor, preencha os campos obrigatórios.");
+            }
+        }
+
+        function aplicarMascara(campo, formato) {
+            if (formato === 'cpf') {
+                const separador1 = '.';
+                const separador2 = '-';
+                const tamanho1 = 3;
+                const tamanho2 = 7;
+                const tamanho3 = 11;
+
+                if (campo.value.length === tamanho1) {
+                    campo.value += separador1;
+                } else if (campo.value.length === tamanho2) {
+                    campo.value += separador1;
+                } else if (campo.value.length === tamanho3) {
+                    campo.value += separador2;
+                }
+            } else if (formato === 'cel') {
+                const separador1 = '(';
+                const separador2 = ') ';
+                const separador3 = '-';
+                const tamanho1 = 0;
+                const tamanho2 = 3;
+                const tamanho3 = 10;
+
+                if (campo.value.length === tamanho1) {
+                    campo.value += separador1;
+                } else if (campo.value.length === tamanho2) {
+                    campo.value += separador2;
+                } else if (campo.value.length === tamanho3) {
+                    campo.value += separador3;
+                }
+            }else if (formato === 'rg') {
+                const separador1 = '.';
+                const separador2 = '-';
+                const tamanho1 = 2;
+                const tamanho2 = 6;
+                const tamanho3 = 10;
+
+                if (campo.value.length === tamanho1) {
+                    campo.value += separador1;
+                } else if (campo.value.length === tamanho2) {
+                    campo.value += separador1;
+                } else if (campo.value.length === tamanho3) {
+                    campo.value += separador2;
+                }
+        }
+    }
+    </script>
+</body>
+</html>
