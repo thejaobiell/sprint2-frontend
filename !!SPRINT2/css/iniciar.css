@@ -4,7 +4,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
     header {
         width: 100%;
         height: 135px;
@@ -20,7 +20,7 @@
         position: absolute;
         top: 50%;
         left: 20px;
-        margin-top: -50px;
+        transform: translateY(-50%);
     }
     #Diagnoscar {
         padding: 10px;
@@ -96,35 +96,34 @@
 @media (min-width: 768px) and (max-width: 991px) {
     header {
         width: 100%;
-        height: 135px;
+        height: 150px;
         background-color: #D9D9D9;
         text-align: center;
-        font-size: 20px;
-        padding: 12px 0;
+        font-size: 22px;
+        padding: 15px 0;
         position: relative;
     }
     #logo {
-        width: 100px;
+        width: 120px;
         height: auto;
         position: absolute;
         top: 50%;
-        left: 20px;
-        margin-top: -50px;
+        left: 30px;
+        transform: translateY(-50%);
     }
     #Diagnoscar {
-        padding: 10px;
+        padding: 12px;
         position: absolute;
         top: 50%;
-        left: calc(50% + 150px); 
+        left: calc(50% + 60px); 
         transform: translate(-50%, -50%);
+        font-size:60px;
     }
     .black {
         color: black;
-        font-size: 50px;
     }
     .blue {
         color: #009FE3;
-        font-size: 50px;
     }
 
     #fundao {
@@ -184,61 +183,62 @@
     }
 }
 
-@media (min-width: 992px) { /* desktops */
+@media (min-width: 768px) and (max-width: 991px) {
     header {
         width: 100%;
-        height: 135px;
+        height: 180px;
         background-color: #D9D9D9;
         text-align: center;
-        font-size: 20px;
-        padding: 12px 0;
+        font-size: 26px; 
+        padding: 20px 0; 
         position: relative;
     }
     #logo {
-        width: 100px;
+        width: 150px; 
         height: auto;
         position: absolute;
         top: 50%;
-        left: 20px;
-        margin-top: -50px;
+        left: 30px;
+        transform: translateY(-50%);
     }
     #Diagnoscar {
-        padding: 10px;
+        padding: 16px;
         position: absolute;
         top: 50%;
-        left: calc(50% + 150px); 
+        left: calc(50% + 75px); 
         transform: translate(-50%, -50%);
+        font-size: 70px;
     }
     .black {
         color: black;
-        font-size: 75px; 
     }
     .blue {
         color: #009FE3;
-        font-size: 75px; 
     }
 
     #fundao {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         position: relative;
     }
 
     #fundo {
+        display: block;
         width: 100%;
         height: auto;
-        object-fit: cover;
     }
 
     #botaoEtexto {
-        width: 50%;
-        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
         color: white;
-        padding-left: 20px;
+        margin-top: 40px; 
+        margin-left: -240px; 
     }
     #botaoEtexto h1 {
-        font-size: 24px;
+        font-size: 30px; 
+        width: 80%;
+        margin: 0 auto;
         text-shadow: 
         -1px -1px 0 black,  
         1px -1px 0 black,
@@ -247,12 +247,12 @@
     }
 
     #botao {
-        height: 60px;
-        border-radius: 25px;
+        height: 70px; 
+        border-radius: 30px;
         border: 3px solid #B6B6B6;
         background: #009FE3;
         color: #fff;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
         cursor: pointer;
     }
@@ -263,12 +263,13 @@
 
     footer {
         width: 100%;
-        height: 40px;
+        height: 50px;
         background-color: #D9D9D9;
         text-align: center;
-        font-size: 16px;
+        font-size: 18px; 
         font-style: italic;
         font-weight: bold;
-        padding: 10px 0;
+        padding: 15px 0;
     }
 }
+
