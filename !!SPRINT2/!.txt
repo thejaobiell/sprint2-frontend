@@ -1,0 +1,6 @@
+cadastro --> DONE
+comchat --> NOT DONE
+escolhercarro --> NOT DONE
+iniciar --> ALMOST DONE
+login --> ALMOST DONE
+semchat --> NOT DONE
