@@ -3,8 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     header {
         width: 100%;
         height: 135px;
@@ -35,17 +34,14 @@
     .blue {
         color: #009FE3;
     }
-
     #fundao {
         position: relative;
     }
-
     #fundo {
         display: block;
         width: 100%;
         height: auto;
     }
-
     #botaoEtexto {
         position: absolute;
         top: 50%;
@@ -65,7 +61,6 @@
             -1px 1px 0 black,
             1px 1px 0 black;
     }
-
     #botao {
         height: 60px;
         border-radius: 25px;
@@ -76,11 +71,9 @@
         font-weight: bold;
         cursor: pointer;
     }
-    
     #botao:hover {
         background: #0077B6;
     }
-
     footer {
         width: 100%;
         height: 60px;
@@ -117,7 +110,7 @@
         top: 50%;
         left: calc(50% + 60px); 
         transform: translate(-50%, -50%);
-        font-size:60px;
+        font-size: 60px;
     }
     .black {
         color: black;
@@ -125,17 +118,14 @@
     .blue {
         color: #009FE3;
     }
-
     #fundao {
         position: relative;
     }
-
     #fundo {
         display: block;
         width: 100%;
         height: auto;
     }
-
     #botaoEtexto {
         position: absolute;
         top: 50%;
@@ -150,12 +140,11 @@
         width: 80%;
         margin: 0 auto;
         text-shadow: 
-        -1px -1px 0 black,  
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
+            -1px -1px 0 black,  
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
     }
-
     #botao {
         height: 60px;
         border-radius: 25px;
@@ -166,11 +155,9 @@
         font-weight: bold;
         cursor: pointer;
     }
-    
     #botao:hover {
         background: #0077B6;
     }
-
     footer {
         width: 100%;
         height: 60px;
@@ -186,11 +173,11 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     header {
         width: 100%;
-        height: 180px; 
+        height: 180px;
         background-color: #D9D9D9;
         text-align: center;
         font-size: 26px;
-        padding: 20px 0; 
+        padding: 20px 0;
         position: relative;
     }
     #logo {
@@ -198,16 +185,17 @@
         height: auto;
         position: absolute;
         top: 50%;
-        left: 40px; 
+        left: 40px;
         transform: translateY(-50%);
     }
     #Diagnoscar {
-        padding: 16px; 
+        padding: 16px;
         position: absolute;
-        top: 50%;
-        left: calc(50% + 75px);
+        top: 25%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 70px; /
+        font-size: 70px;
+        transform: translateX(-50%)
     }
     .black {
         color: black;
@@ -215,62 +203,54 @@
     .blue {
         color: #009FE3;
     }
-
     #fundao {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
     }
-
     #fundo {
-        display: block;
-        width: 100%;
-        height: auto;
+        width: 50%;
+        height: 650px;
+        background-color: #CCCCCC;
     }
-
     #botaoEtexto {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        width: 50%;
+        padding: 50px;
         text-align: center;
         color: white;
-        margin-top: 40px; 
-        margin-left: -240px; 
     }
     #botaoEtexto h1 {
         font-size: 30px;
         width: 80%;
         margin: 0 auto;
         text-shadow: 
-        -1px -1px 0 black,  
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
+            -1px -1px 0 black,  
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
     }
-
     #botao {
-        height: 70px; 
-        border-radius: 30px; 
+        height: 70px;
+        border-radius: 30px;
         border: 3px solid #B6B6B6;
         background: #009FE3;
         color: #fff;
-        font-size: 24px; 
+        font-size: 24px;
         font-weight: bold;
         cursor: pointer;
     }
-    
     #botao:hover {
         background: #0077B6;
     }
-
     footer {
         width: 100%;
         height: 50px;
         background-color: #D9D9D9;
         text-align: center;
-        font-size: 18px; 
+        font-size: 18px;
         font-style: italic;
         font-weight: bold;
-        padding: 15px 0; 
-    } 
+        padding: 15px 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -292,12 +272,13 @@
         transform: translateY(-50%);
     }
     #Diagnoscar {
-        padding: 20px;
+        padding: 16px;
         position: absolute;
-        top: 50%;
-        right: 50px;
-        transform: translateY(-50%);
-        font-size: 80px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+        transform: translateX(-50%)
     }
     .black {
         color: black;
@@ -305,32 +286,31 @@
     .blue {
         color: #009FE3;
     }
-
     #fundao {
         display: flex;
         justify-content: space-between;
     }
-
     #fundo {
-        width: 200%;
+        width: 40%;
         height: 650px;
         background-color: #CCCCCC;
     }
-
     #botaoEtexto {
         width: 50%;
         padding: 50px;
         text-align: center;
         color: white;
     }
-
     #botaoEtexto h1 {
         font-size: 36px;
         width: 80%;
         margin: 0 auto;
-        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        text-shadow: 
+            -1px -1px 0 black,  
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
     }
-
     #botao {
         height: 80px;
         border-radius: 35px;
@@ -341,11 +321,9 @@
         font-weight: bold;
         cursor: pointer;
     }
-
     #botao:hover {
         background: #0077B6;
     }
-
     footer {
         width: 100%;
         height: 70px;
