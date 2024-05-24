@@ -35,12 +35,12 @@
         color: #009FE3;
     }
 
-    .form-section {
+    .forms {
         padding: 20px;
         box-sizing: border-box;
     }
 
-    .form-section label {
+    .forms label {
         display: block;
         margin-bottom: 5px;
     }
@@ -130,12 +130,12 @@
         color: #009FE3;
     }
 
-    .form-section {
+    .forms {
         padding: 25px;
         box-sizing: border-box;
     }
 
-    .form-section label {
+    .forms label {
         display: block;
         margin-bottom: 7px;
     }
@@ -224,12 +224,12 @@
             color: #009FE3;
         }
     
-        .form-section {
+        .forms {
             padding: 25px;
             box-sizing: border-box;
         }
     
-        .form-section label {
+        .forms label {
             display: block;
             margin-bottom: 5px;
         }
@@ -318,12 +318,12 @@
         color: #009FE3;
     }
 
-    .form-section {
+    .forms {
         padding: 25px;
         box-sizing: border-box;
     }
 
-    .form-section label {
+    .forms label {
         display: block;
         margin-bottom: 5px;
     }
