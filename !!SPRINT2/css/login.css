@@ -283,3 +283,39 @@
         margin-top: auto;
     }
 }
+
+@media (min-width: 1200px) {
+    header {
+        height: 200px;
+        font-size: 28px;
+    }
+    #logo {
+        left: 50px;
+    }
+    #Diagnoscar {
+        font-size: 100px;
+    }
+    section {
+        height: 500px;
+    }
+    section form {
+        max-width: 400px;
+    }
+    section input[type="text"],
+    section input[type="email"] {
+        font-size: 22px;
+    }
+    section h4 {
+        font-size: 36px;
+    }
+    #botao {
+        width: 180px;
+        height: 70px;
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    footer {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+}
