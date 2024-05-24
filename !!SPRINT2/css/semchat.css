@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilos para celulares */
+
 @media(max-width: 767px) {
     header {
         width: 100%;
